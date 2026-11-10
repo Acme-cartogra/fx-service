@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "fx-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8113"
+paths:
+  "/fxs":
+    get:
+      summary: "List fxs"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create fx"
+      responses:
+        "200":
+          description: OK
+  "/fxs/{id}":
+    get:
+      summary: "Get fx by ID"
+      responses:
+        "200":
+          description: OK
