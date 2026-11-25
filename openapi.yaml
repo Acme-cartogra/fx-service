@@ -17,6 +17,12 @@ paths:
         "200":
           description: OK
   "/fxs/{id}":
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
     get:
       summary: "Get fx by ID"
       responses:
